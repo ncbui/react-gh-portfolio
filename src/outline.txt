@@ -1,0 +1,14 @@
+Build a portfolio
+React single-page application with functional components
+
+Stack: React, React-Router, Bootstrap, Reactstrap
+Back-end mocking: json-server
+
+
+
+x npm i json-server
+- set up db.json for JSON-server with:
+    - techStack
+    - aboutMe
+    - projectsList
+    - contactInfo

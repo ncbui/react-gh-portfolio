@@ -1,0 +1,16 @@
+.Contact {
+    border: 2px solid #221e22ff;
+    /* opacity: 0.7; */
+    border-radius: 1%;
+    color: #eca72cff;
+    position: relative;
+    left: -20vh;
+    background-color: #221e22ff;
+    padding: 3vh 3vw;
+}
+
+.Contact h3 {
+    margin: 3vh 1vw 6vw;
+    padding: 2vh 0;
+    border-bottom: 2px solid #8972AC;
+}

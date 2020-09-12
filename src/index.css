@@ -5,9 +5,59 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FBDEDA;
+  color: #44355bff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+--english-violet: #44355bff;
+--misty-rose: #FBDEDA;
+--spanish-pink: #f7bcb6ff;
+--raisin-black: #221e22ff;
+--marigold: #eca72cff;
+--flame: #ee5622ff;
+--coral: #F27C54;
+--purple-mountain-majesty: #8972AC;
+}
+
+h1, a {
+    color: var(--english-violet);
+}
+
+h2 {
+    border-bottom: 2px solid #221e22ff;
+}
+
+h3 {
+    color: var(--coral);
+}
+
+h4, small, .text-muted  {
+    color: var(--purple-mountain-majesty) !important;
+}
+
+.card {
+    background-color: transparent;
+}
+
+button {
+    border: 1px solid var(--purple-mountain-majesty) !important;
+    background-color: transparent !important;
+    color: var(--purple-mountain-majesty) !important;
+    margin: 0 1vh !important;
+}
+
+
+/* CSS HEX */
+/* --english-violet: #44355bff;
+--misty-rose: #FBDEDA;
+--spanish-pink: #f7bcb6ff;
+--raisin-black: #221e22ff;
+--marigold: #eca72cff;
+--flame: #ee5622ff; */
+
