@@ -1,6 +1,9 @@
 .ProjectsList-jumbo {
     background-color: transparent;
-    margin: 20vh 0 40vh;
+    background-color: rgba(137, 114, 172, 0.3);
+    padding: 20vh 0 40vh;
+    margin: 10vh 0;
+    z-index: 10;
 }
 .ProjectsList-header {
     color: #F27C54;

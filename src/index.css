@@ -17,20 +17,21 @@ code {
 :root {
 --english-violet: #44355bff;
 --misty-rose: #FBDEDA;
---spanish-pink: #f7bcb6ff;
---raisin-black: #221e22ff;
---marigold: #eca72cff;
+--spanish-pink: rgb(247, 188, 182);
+--raisin-black: rgb(34,30,34);
+--marigold: rgb(236,167,44);
 --flame: #ee5622ff;
---coral: #F27C54;
---purple-mountain-majesty: #8972AC;
+--coral: rgb(242, 124, 84);
+--purple-mountain-majesty: rgb(137, 114, 172);
 }
 
 h1, a {
     color: var(--english-violet);
+    text-decoration: none;
 }
 
 h2 {
-    border-bottom: 2px solid #221e22ff;
+    border-bottom: 2px solid var(--raisin-black);
 }
 
 h3 {
@@ -50,6 +51,17 @@ button {
     background-color: transparent !important;
     color: var(--purple-mountain-majesty) !important;
     margin: 0 1vh !important;
+}
+
+a {
+    text-decoration: none ;
+    color: var(--misty-rose);
+    /* border: 1px solid var(--marigold); */
+}
+
+a:hover {
+    text-decoration: none ;
+    color: var(--marigold);
 }
 
 

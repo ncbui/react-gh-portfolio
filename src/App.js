@@ -14,6 +14,7 @@ export default function App() {
     <BrowserRouter>
       <div className="App">
         <Navigation />
+        <main>
         <Switch>
           <Route exact path="/">
             <SinglePageScroll />
@@ -27,7 +28,12 @@ export default function App() {
           <Route exact path="/contact" >
             <SinglePageScroll />
           </Route>
+
+          <Route>
+            <h3>Oops, found a dead end</h3>
+          </Route>
         </Switch>
+        </main>
       </div>
     </BrowserRouter>
   );

@@ -5,10 +5,21 @@ Stack: React, React-Router, Bootstrap, Reactstrap
 Back-end mocking: json-server
 
 
+Component Hierarchy
+
+App 
+    Navigation
+    SinglePageScroll
+        Landing
+        About 
+        ProjectsList
+            Project 
+        Contact
+
+
 
 x npm i json-server
-- set up db.json for JSON-server with:
-    - techStack
-    - aboutMe
-    - projectsList
-    - contactInfo
+x set up db.json for JSON-server with:
+    x techStack
+    x aboutMe
+    x projectsList
