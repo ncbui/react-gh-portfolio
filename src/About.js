@@ -32,19 +32,19 @@ export default function About() {
 
   const stacklist = () => {
     for (let key in stack){
-      return <li> {key} </li>
+      return <li> {key}: {key[0]} </li>
     }
   }
 
   return (
-  <div className="About">
+  <div className="About col-8 mx-auto">
       {isLoading &&
         <h1> Loading...</h1>
     }
 
     {!isLoading &&
       <Row>
-        <Col sm="6" className="About-skills text-right">
+        <Col className="About-skills text-right col-sm-4">
           <Card body>
             <CardTitle><h3> Tech Stack </h3></CardTitle>
             <CardText>
@@ -52,7 +52,7 @@ export default function About() {
               </CardText>
           </Card>
         </Col>
-        <Col sm="6" className="About-me text-left">
+        <Col className="About-me text-left col-sm-8">
           <Card>
             <CardHeader><h4>About Me</h4> </CardHeader>
             <CardBody>

@@ -23,3 +23,6 @@ x set up db.json for JSON-server with:
     x techStack
     x aboutMe
     x projectsList
+- set up scroll to jump to id based on url
+x reduce routes with :id
+- if page accessed by url, just to that section

@@ -7,7 +7,6 @@ import portfolioApi from "./Api";
 export default function Contact() {
 
   const [info, setInfo] = useState(null);
-  console.log(info)
 
   useEffect(() => {
     async function fetchData() {
@@ -18,11 +17,14 @@ export default function Contact() {
   }, []);
 
   const contactBoxes = () => {
-    console.log("contactBoxes,", info)
+    // console.log("contactBoxes,", info)
     const site = Object.keys(info);
     return site.map(site => {
       return (
-      <div className={`Tiny ${site} col-6 ml-auto`}>
+      <div 
+        key={site}
+        className={`Tiny ${site} col-3 ml-auto`}
+        >
           <p><a href={info[site]}>{site}</a></p>
       </div>)
     })
@@ -33,10 +35,10 @@ export default function Contact() {
     <div className="Contact">
       <h3 className="col-4 mx-auto"> Contact me </h3>
       <div className="row">
-        <div className="col-8">
+        <div className="col-6 ml-auto text-right">
           {info && contactBoxes()}
         </div>
-        <div className="col-4">
+        <div className="col-4 ml-auto">
           <p>tiny text tiny text tiny text tiny text tiny text tiny text tiny text tiny text tiny text tiny text </p>
         </div>
       </div>

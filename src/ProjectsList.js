@@ -28,10 +28,12 @@ export default function ProjectsList() {
 
   const createProjects = () => { 
     return projects.map((project, idx) => <Project 
+          className="Project"
           project={project} 
           position={idx % 2} 
           key={project.name}
-    />)
+    />
+    )
    }
 
   return (
@@ -42,9 +44,12 @@ export default function ProjectsList() {
       }
 
       {!isLoading && 
-        <Jumbotron fluid className="ProjectsList-jumbo">
-          <h2 className="ProjectsList-header display-3 col-4 mx-auto"> Projects </h2>
-          <h4 className="ProjectsList-sub lead">Selected projects</h4>
+        <Jumbotron className="ProjectsList-jumbo col-md-8 mx-auto">
+        <div className="ProjectsList-title row">
+          <h3 className="ProjectsList-header display-4 col-4 mx-auto"> Projects </h3>
+        </div>
+          {/* <h4 className="ProjectsList-sub lead*-">Selected projects</h4> */}
+          <h4 className="ProjectsList-sub">Selected projects</h4>
           <br />
           <Container className="ProjectsList-container">
           {createProjects()}

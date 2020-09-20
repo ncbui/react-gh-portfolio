@@ -18,24 +18,11 @@
          "long": "longer text about me"
      },
      "projectsList": [
-        {   "name": "jobly", 
-            "libraries": "....", 
-            "link": "",
-            "details": "awdwaadw daw dwaawd dwaw adwdwdwadw wad wdadw adwdw dw ",
-            "updated": "September 2020"
-        },
-        {
-            "name": "microblog",
-            "libraries": "....",
-            "link": "",
-            "details": " awdw wdwdw aadw a dwd aw wdwda w adwa ddw ",
-            "updated": "September 2020"
-        },
         {
             "name": "portfolio",
-            "libraries": "React, JSX",
+            "libraries": "React, reactstrap, json-server back-end",
             "link": "",
-            "details": " awddwwad adwwd wdwd dw wadwdwd a",
+            "description": " Single-page-portfolio ",
             "updated": "September 2020"
         }
     ], 

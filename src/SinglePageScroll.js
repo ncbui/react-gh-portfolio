@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import React from "react";
+import { useParams } from "react-router-dom";
 // import './SingleScrollPage.css';
 import Landing from './Landing';
 import About from './About';
@@ -15,6 +15,10 @@ import Contact from './Contact';
  *                              Contacts }
 */
 export default function SinglePageScroll() {
+
+  const id = useParams();
+
+  // TODO: if page accessed by url, jump to that section
 
   return (
     <div className="SinglePageScroll">

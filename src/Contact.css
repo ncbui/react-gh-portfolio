@@ -6,6 +6,7 @@
     position: relative;
     left: -20vh;
     background-color: rgb(34,30,34,.89);
+    box-shadow: -8px 8px 2px 1px rgba(34, 30, 34, .3);
     padding: 3vh 3vw;
     z-index: 9;
 }
@@ -14,5 +15,9 @@
     margin: 3vh 1vw 6vw;
     padding: 2vh 0;
     border-bottom: 2px solid rgba(137, 114, 172, 0.8);
+}
 
+.Tiny {
+    height: 20vh;
+    display: inline-block;
 }

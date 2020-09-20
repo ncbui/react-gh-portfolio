@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import './App.css';
 import SinglePageScroll from './SinglePageScroll';
@@ -19,16 +19,9 @@ export default function App() {
           <Route exact path="/">
             <SinglePageScroll />
           </Route>
-          <Route exact path="/about" >
+          <Route exact path="/:id" >
             <SinglePageScroll />
           </Route>
-          <Route exact path="/projects" >
-            <SinglePageScroll />
-          </Route>
-          <Route exact path="/contact" >
-            <SinglePageScroll />
-          </Route>
-
           <Route>
             <h3>Oops, found a dead end</h3>
           </Route>
