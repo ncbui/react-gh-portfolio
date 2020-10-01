@@ -1,0 +1,9 @@
+.Footer-contact-info {
+    display: inline;
+    padding: 0 1rem;
+    border-right: 1px solid black;
+}
+
+.Footer-contact, .Footer-notes {
+    display: inline-block;
+}

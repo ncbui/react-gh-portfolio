@@ -6,25 +6,25 @@ import { Card, CardTitle, CardText, CardImg, CardImgOverlay } from 'reactstrap';
  * 
  * Props
  * - project: details about the project
- * - position: sets component css-placement
+ * - position: sets component placement with bootstrap
  * 
  * App -> ProjectsList -> Project
  */
 export default function Project({ project, position }) {
 
-  const align = () => position ? 'ml-auto' : 'mr-auto';
+  const align = () => position === 'left' ? 'ml-auto' : 'mr-auto';
 
   return (
-    <div className={'Project col-10 col-lg-5 ' + align()}>
+    <div className={'Project col-10 col-lg-6 ' + align()}>
       <Card inverse>
         <CardImg width="100%" src="https://allears.net/wp-content/uploads/2020/01/Mando-8-BabyYoda-998x677.jpg" alt="Project-FIXME" />
         <CardImgOverlay>
-          <CardTitle>{project.name}</CardTitle>
+          <CardTitle>FIXME {project.name}</CardTitle>
           <CardText>
-            {project.details} made with {project.libraries}
+            FIXME {project.details} made with {project.libraries}
           </CardText>
           <CardText>
-            <small className="text-muted">Last updated {project.updated}</small>
+            <small className="text-muted">Last updated FIXME {project.updated}</small>
           </CardText>
         </CardImgOverlay>
       </Card>

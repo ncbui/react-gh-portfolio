@@ -1,16 +1,22 @@
 import React from "react";
+import { Jumbotron, Container } from 'reactstrap';
 import './Landing.css';
 
 /**Renders a collection of components */
 export default function Landing() {
 
   return (
-    <div className="Landing">
+    <Jumbotron fluid className="Landing text-center">
+      <Container className="Landing-container col-md-6 mx-auto">
       <header className="Landing-header">
-        <h3>✧･ﾟ: *✧･ﾟ:* 　　 *:･ﾟ✧*:･ﾟ✧</h3>
-        <h1>Hello</h1>
-        <h3>✧･ﾟ: *✧･ﾟ:* 　　 *:･ﾟ✧*:･ﾟ✧</h3>
+        <h2>Hello, I am Cam Bui. </h2>
+          <h3>I am a fullstack developer working with</h3> 
+          <p> FIXME
+          React, Node/Express, Flask, Python3 
+          </p>
+
       </header>
-    </div>
+      </Container>
+    </Jumbotron>
   )
 }

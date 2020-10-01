@@ -15,14 +15,35 @@
      "aboutMe": {
          "name": "Cam Bui",
          "subtitle": "researcher turned software engineer",
-         "long": "longer text about me"
+         "long": " FIXME longer text about me. blah blah developer amused systems interfacing and dancing with each other. bahcelor studied how the brain navigates physics via this meatsuit. hobby and research with how perception leads to cognition by way of the conscious field. lemme optimize your front end"
      },
      "projectsList": [
         {
-            "name": "portfolio",
+            "name": "microblog",
+            "libraries": "Redux, React, reactstrap, and json-server CRUD backend",
+            "link": "",
+            "description": " A React blogging website using Redux ",
+            "updated": "September 2020"
+        },
+        {
+            "name": "shoply",
             "libraries": "React, reactstrap, json-server back-end",
             "link": "",
-            "description": " Single-page-portfolio ",
+            "description": " A small React e-commerce website using Redux. ",
+            "updated": "September 2020"
+        },
+        {
+            "name": "algorithm index",
+            "libraries": "FIXME, ?javascript? codepen? github?? react??",
+            "link": "",
+            "description": " A single-page-app that highlights patterns, search algorithms, and data structure   ",
+            "updated": "September 2020"
+        }, 
+        {
+            "name": "livestack",
+            "libraries": "React, reactstrap, json-server back-end",
+            "link": "",
+            "description": " Employed test-driven development practices to refactor components for testability and maintainability",
             "updated": "September 2020"
         }
     ], 

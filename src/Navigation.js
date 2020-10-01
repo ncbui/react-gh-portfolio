@@ -7,13 +7,9 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
+  NavLink
 } from 'reactstrap';
+
 
 /**Renders a collection of components */
 export default function Navigation() {
@@ -23,66 +19,31 @@ export default function Navigation() {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div className="Navigation">
-      <Navbar light expand="md" className="Navigation fixed-top col-md-8 mx-auto">
+      // <Navbar light expand="lg" className="Navigation fixed-top col-12">
+      <Navbar light className="Navigation fixed-top col-12">
         <NavbarBrand href="/">Cam Bui</NavbarBrand>
-        <NavbarToggler onMouseEnter={toggle} />
+        <NavbarToggler onClick={toggle} /> 
 
         <Collapse isOpen={isOpen} navbar >
-          <Nav className="mr-auto" navbar>
-
+          <Nav className="Navigation-navbar text-right mr-auto" navbar>
+          <NavItem>
+            <NavLink href="/about">
+              About
+          </NavLink>
+          </NavItem>
             <NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Projects
-              </DropdownToggle>
-                <DropdownMenu className="col-8">
-                  {/* <DropdownItem className="mx-auto col-8"> */}
-                  <DropdownItem>
-                    <NavLink href="/about">FIXME 1</NavLink>
-                  </DropdownItem >
-                  {/* <DropdownItem divider /> */}
-                  <DropdownItem>
-                    <NavLink href="/about">FIXME 2</NavLink>
-                  </DropdownItem>
-                  {/* <DropdownItem divider /> */}
-                  <DropdownItem className="text-center">
-                    FIXME with divider
-                </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              <NavLink href="/projects">
+                Projects
+            </NavLink>
             </NavItem>
-
             <NavItem>
-              <NavLink href="/about">
-                About
+              <NavLink href="/exp">
+                Experience
             </NavLink>
             </NavItem>
 
           </Nav>
         </Collapse>
-        <Collapse isOpen={isOpen} navbar>
-          <NavbarText> FIXME icons
-          {/* <UncontrolledDropdown >
-            <DropdownToggle nav caret>
-              FIXME theme
-              </DropdownToggle> */}
-            {/* <DropdownMenu right>
-              <DropdownItem>
-                <NavLink href="/about">FIXME misty rose</NavLink>
-              </DropdownItem>
-              <DropdownItem>
-                <NavLink href="/about">FIXME high contrast</NavLink>
-              </DropdownItem>
-              <DropdownItem divider />
-              <DropdownItem>
-                FIXME with divider
-                </DropdownItem>
-            </DropdownMenu> */}
-            {/* </UncontrolledDropdown> */}
-          </NavbarText>
-        </Collapse>
       </Navbar>
-    </div>
   )
 }

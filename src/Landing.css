@@ -1,6 +1,6 @@
-.Landing{
-    height: 89vh;
-    padding: 36vh 0;
-    /* background-color: rgb(236,167,44, 0.1); */
-    margin-bottom: 10vh;
+.Landing {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

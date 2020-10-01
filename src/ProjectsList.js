@@ -26,36 +26,28 @@ export default function ProjectsList() {
     getDetails();
   }, [isLoading]);
 
-  const createProjects = () => { 
-    return projects.map((project, idx) => <Project 
-          className="Project"
-          project={project} 
-          position={idx % 2} 
-          key={project.name}
+  // given an array of project objects, returns Project components
+  const createProjects = () => {
+    return projects.map((project, idx) => <Project
+      className="Project"
+      project={project}
+      position={idx % 2 ? 'left' : 'right'}
+      key={project.name}
     />
     )
-   }
+  }
 
   return (
-    
-    <div className="ProjectsList">
-      {isLoading &&
-        <h1> Loading...</h1>
-      }
-
-      {!isLoading && 
-        <Jumbotron className="ProjectsList-jumbo col-md-8 mx-auto">
-        <div className="ProjectsList-title row">
-          <h3 className="ProjectsList-header display-4 col-4 mx-auto"> Projects </h3>
-        </div>
-          {/* <h4 className="ProjectsList-sub lead*-">Selected projects</h4> */}
-          <h4 className="ProjectsList-sub">Selected projects</h4>
-          <br />
-          <Container className="ProjectsList-container">
-          {createProjects()}
+      <Jumbotron fluid className="ProjectsList">
+      {!isLoading &&
+        <Container className="ProjectsList-container col-md-6 mx-auto">
+        <div className="ProjectsList-title row col-12 col-md-4  mr-auto">
+              <h3 className="ProjectsList-header display-4 "> Projects </h3>
+            </div>
+            <p className="ProjectsList-sub">Selected projects</p>
+            {createProjects()}
           </Container>
-        </Jumbotron>
       }
-    </div>
+      </Jumbotron>
   )
 }

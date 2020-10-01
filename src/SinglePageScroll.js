@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import Landing from './Landing';
 import About from './About';
 import Projects from './ProjectsList';
-import Contact from './Contact';
+import Contact from './Footer';
 
 /**Renders a collection of components 
  * 
