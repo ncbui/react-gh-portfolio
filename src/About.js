@@ -22,7 +22,7 @@ export default function About() {
 
   useEffect(() => {
     async function fetchData() {
-      let me = await portfolioApi.getAboutMe();
+      let me = await portfolioApi.mockGetAboutMe();
       setAboutMe(me);
 
       let stack = await portfolioApi.getStack();

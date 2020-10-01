@@ -7,10 +7,7 @@
             "back-end": [
                 "Express",
                 "Flask"
-            ]
-         }
-
-
+            ]}
      },
      "aboutMe": {
          "name": "Cam Bui",

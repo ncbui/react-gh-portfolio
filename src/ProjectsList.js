@@ -19,7 +19,7 @@ export default function ProjectsList() {
 
   useEffect(() => {
     async function getDetails() {
-      let res = await portfolioApi.getProjects();
+      let res = await portfolioApi.mockGetProjects();
       setProjects(res)
       setIsLoading(false);
     };
