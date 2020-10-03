@@ -1,7 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
 import './App.css';
-// import SinglePageScroll from './SinglePageScroll';
 
 import Footer from './Footer';
 import Routes from './Routes';

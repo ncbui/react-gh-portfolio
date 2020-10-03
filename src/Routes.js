@@ -1,21 +1,19 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import './App.css';
-// import SinglePageScroll from './SinglePageScroll';
 
 import Landing from './Landing';
 import ProjectsList from './ProjectsList';
 import About from './About';
 import Experience from './Experience';
 
-/** Renders Route
+/** Renders Routes
  * 
  * 
  *  App -> { Navigation, SinglePageScroll }
  */
 export default function Routes() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL} >
       <Switch>
         <Route exact path="/">
           <Landing />
@@ -33,6 +31,5 @@ export default function Routes() {
           <h3>Oops, found a dead end</h3>
         </Route>
       </Switch>
-    </BrowserRouter>
   );
 }
