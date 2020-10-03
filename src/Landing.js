@@ -10,9 +10,9 @@ export default function Landing() {
       <Container className="Landing-container col-md-6 mx-auto">
       <header className="Landing-header">
         <h2>Hello, I am Cam Bui. </h2>
-          <h3>I am a fullstack developer working with</h3> 
+          <h3>Fullstack developer </h3> 
           <p> FIXME
-          React, Node/Express, Flask, Python3 
+           working with React, Node/Express, Flask, Python3 
           </p>
 
       </header>

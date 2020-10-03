@@ -12,12 +12,13 @@ const BASE_API_URL = "http://localhost:5000";
     const res = await axios.get(`${BASE_API_URL}/aboutMe`);
     return res.data;
   }
+
   static async mockGetAboutMe() {
     const res = {
       name: "Cam Bui",
       subtitle: "researcher turned software engineer",
       long:
-        " FIXME longer text about me. blah blah developer amused systems interfacing and dancing with each other. bahcelor studied how the brain navigates physics via this meatsuit. blah blah training and hobby with how perception leads to cognition by way of the conscious field. lemme optimize your front and backends",
+        " FIXME longer text about me. /n blah blah developer amused systems interfacing and dancing with each other. bahcelor studied how the brain navigates physics via this meatsuit. blah blah training and hobby with how perception leads to cognition by way of the conscious field. lemme optimize your front and backends",
     };
     return res;
   }

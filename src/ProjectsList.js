@@ -41,10 +41,10 @@ export default function ProjectsList() {
       <Jumbotron fluid className="ProjectsList">
       {!isLoading &&
         <Container className="ProjectsList-container col-md-6 mx-auto">
-        <div className="ProjectsList-title row col-12 col-md-4  mr-auto">
-              <h3 className="ProjectsList-header display-4 "> Projects </h3>
+        <div className="ProjectsList-title row col-12 col-md-4  mx-auto">
+              <h3 className="ProjectsList-header display-4"> Projects </h3>
+              <p className="ProjectsList-sub">Selected projects</p>
             </div>
-            <p className="ProjectsList-sub">Selected projects</p>
             {createProjects()}
           </Container>
       }

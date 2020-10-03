@@ -14,6 +14,7 @@ import {
 } from 'reactstrap';
 import portfolioApi from "./Api";
 
+
 /**Renders a collection of components */
 export default function About() {
   const [isLoading, setIsLoading] = useState(true);
@@ -49,6 +50,7 @@ export default function About() {
               <Card>
                 <CardHeader className="text-right">
                   <h3> Skills </h3>
+                  or just pictures showing off my worm farm
                 </CardHeader>
                 <CardBody>
                 <CardText>
@@ -59,6 +61,7 @@ export default function About() {
                 <li>frameworks</li>
                 <li>concepts</li>
                 </ul>
+                
                 </CardText>
                 </CardBody>
               </Card>

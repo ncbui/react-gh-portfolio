@@ -19,28 +19,20 @@ export default function Footer() {
     fetchData();
   }, []);
 
-  const contactBoxes = () => {
-    const site = Object.keys(info);
-    return site.map(site => {
-      return (
-        <p key={site} className="Footer-contact-info"><a href={info.site}>{site}</a></p>
-      )
-    })
-  }
+
 
   return (
     <div className="Footer fixed-bottom">
-      <Container fluid className="Footer-container">
+      <Container fluid className="Footer-container col-12">
         <div className="Footer-contact col-12 col-md-6 mr-auto text-left">
-          {info && 
-            contactBoxes()
-          }
+        <p className="col-6 mr-auto">
+             Animation as counterbalance to the toggling-animation of the top-right menu. Can be purely for funsies.
+        </p>
         </div>
-        <div className="Footer-notes col-6 mr-auto text-right">
+        <div className="Footer-notes col-12 col-md-6 mr-auto text-right">
           <small className="Footer-notes-text">
-            tiny text tiny text tiny text tiny text
+            fuck the system and also hire me plz
           </small>
-
         </div>
       </Container>
     </div>
