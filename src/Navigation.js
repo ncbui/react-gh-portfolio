@@ -21,23 +21,23 @@ export default function Navigation() {
   return (
       // <Navbar light expand="lg" className="Navigation fixed-top col-12">
       <Navbar light className="Navigation fixed-top col-12">
-      <NavbarBrand href="/planning">Cam Bui</NavbarBrand>
+      <NavbarBrand href="/">Cam Bui</NavbarBrand>
         <NavbarToggler onClick={toggle} /> 
 
         <Collapse isOpen={isOpen} navbar >
           <Nav className="Navigation-navbar text-right mr-auto" navbar>
           <NavItem>
-            <NavLink href="/planning/about">
+            <NavLink href="/about">
               About
           </NavLink>
           </NavItem>
             <NavItem>
-            <NavLink href="/planning/projects">
+            <NavLink href="/projects">
                 Projects
             </NavLink>
             </NavItem>
             <NavItem>
-            <NavLink href="/planning/exp">
+            <NavLink href="/exp">
                 Experience
             </NavLink>
             </NavItem>

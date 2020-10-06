@@ -14,22 +14,19 @@ import Experience from './Experience';
  */
 export default function Routes() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <Switch>
-        <Route exact path="/planning">
+        <Route exact path="/">
           <Landing />
         </Route>
-        <Route exact path="/planning/about" >
+        <Route exact path="/about" >
           <About />
         </Route>
-        <Route exact path="/planning/projects" >
+        <Route exact path="/projects" >
           <ProjectsList />
         </Route>
-        <Route exact path="/planning/exp" >
+        <Route exact path="/exp" >
           <Experience />
-        </Route>
-        <Route>
-        <div> oops, what happened here? </div>
         </Route>
       </Switch>
     </BrowserRouter>
