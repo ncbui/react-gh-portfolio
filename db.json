@@ -35,13 +35,6 @@
             "link": "",
             "description": " A single-page-app that highlights patterns, search algorithms, and data structure   ",
             "updated": "September 2020"
-        }, 
-        {
-            "name": "livestack",
-            "libraries": "React, reactstrap, json-server back-end",
-            "link": "",
-            "description": " Employed test-driven development practices to refactor components for testability and maintainability",
-            "updated": "September 2020"
         }
     ], 
      "contactInfo":  {

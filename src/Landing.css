@@ -1,33 +1,35 @@
 .Landing {
-    height: 100vh;
+    min-height: 60vh;
+    background: 
+    linear-gradient(
+        rgba(37, 24, 37, 0.70), 
+        var(--violet));
+    padding: 12vh 0;
+    color: var(--offwhite);
+    overflow: hidden;
 }
 
-.Landing-container {
-    height: 60vh;
-    width: 600px;
-    position: absolute;
-    bottom: -10vh;
-    left: 30%;
-    padding: 72px 8px;
+.Landing-icon {
+    color: var(--rosedust);
+    margin: 0 1vw;
 }
 
-.Landing-header {
-    width: 400px;
-    position: absolute;
-    left: 30%;
+.Landing-name {
+    color: var(--mac);
+    display: inline;
 }
 
-img {
-    width: 300px;
-    position: absolute;
-    right: 450px;
-    top: -13%;
+.Landing .btn {
+    background-color: transparent;
+    color: var(--offwhite);
+    border: 4px solid var(--offwhite);
+    font-weight: bold;
+    font-family: 'Calibri', 'Nunito Sans', sans-serif;
+    padding: 10px
 }
 
-img:before {
-    content:"";
-    background-color: rgb(110, 126, 140, .9);
-    position: absolute;
-    height: 100%;
-    width: 100%;
+.Landing-card {
+    box-shadow: none;
+    /* border: 5px solid var(--offwhite); */
+    border: none;
 }

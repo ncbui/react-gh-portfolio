@@ -5,18 +5,36 @@
 :root{
     --thistle: #D8C1D9;
     --gray: rgb(110, 126, 140);
-    --offwhite: #F0F1F2;
+    --offwhite: rgb(250, 248, 239);
     --green: #078C7F;
     --brown: #A66A65;
+    /* --terracotta: #ED6A5A; */
+    /* --mac: #faae7b; */
+    --mac: #E9B44C;
+    --metallic-seaweed: rgb(25, 139, 151);
+
+    --mauve: rgb(58, 23, 33);
+    /* --electric: rgb(9, 192, 195); */
+    --violet: rgb(37, 24, 37);
+    --rosedust: #9f6976;
+    --middlered: rgb(238, 217, 211);
 }
 
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Calibri', 'Nunito Sans', sans-serif;
   background-color: var(--offwhite);
-  font-size: 22px;
+  color: var(--mauve);
+  font-size: 1.4rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+      background: 
+        linear-gradient(
+        rgb(250, 248, 239, .7), 
+        rgb(250, 248, 239, .9)),
+        url(bg.jpg) center right;
 }
 
 code {
@@ -27,25 +45,89 @@ code {
 h1 {
     font-family: 'Oranienbaum', serif;
     font-weight: bold;
+    /* font-size: 3rem; */
 }
 
+h2 {
+    font-family: 'Oranienbaum', serif;
+    font-weight: bold;
+}
 
-h4 {
-    font-family: 'Calibri', sans-serif;
+h3 {
+    font-family: 'Calibri', 'Nunito Sans', sans-serif;
     font-weight: bold;
 }
 
 
-.container {
-    background-color: var(--thistle);
-    color: var(--green);
-    margin: 16vh 0;
+h4 {
+    font-family: 'Calibri', 'Nunito Sans', sans-serif;
+    min-width: min-content;
+    margin: 5vh 0;
+}
+
+h5 {
+    font-family: 'Calibri', 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: var(--violet);
+    border: 1vw solid var(--violet);
+    margin: 0 1vw;
+    box-shadow: 5px 1px 10px #888888;
+    font-size: 1.1rem;
 }
 
 .card {
-    border-radius: 1rem;
+    background: transparent;
+    border: 5px solid var(--violet);
+    display: inline-flex;
+    flex-direction: row;
+    padding: 5vh 1vw;
+    border-radius: 0;
+    box-shadow: 5px 5px 5px #888888;
 }
 
-.About-spinner {
-    margin: 10vh 0;
+
+.card-img {
+    background-color: transparent;
+}
+
+.section-container {
+    margin: 0;
+    padding: 0;
+}
+
+a, li a {
+    color: var(--mac);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+.section-top-left {
+    max-width: 300px;
+    display: relative;
+    top: 100px;
+    left: -100px;
+    z-index: 5;
+    padding: 0;
+    margin: 0;
+}
+
+.section-bottom-right {
+    padding-left: 200px;
+    min-height: 300px;
+    bottom: 20vh;
+    display: relative;
+    z-index: 1;
+}
+
+.section-bottom-center {
+    min-height: 100px;
+    z-index: 1;
+    padding: 0; 
+    margin: 0;
 }

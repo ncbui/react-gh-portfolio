@@ -30,45 +30,28 @@ export default class portfolioApi {
   static async mockGetProjects() {
     const res = [
       {
-        name: "Microblog",
-        frontend: "React, Redux, reactstrap",
-        backend: "json-server CRUD",
-        github:"www.github.com/FIXME",
-        demo: "www.FIXME.com",
-        description: " A small blogging website mockup",
-        updated: "September 2020",
-      },
-      {
-        name: "Shoply",
-        libraries: "Frontend: React, reactstrap, json-server back-end",
-        frontend: "React, Redux, reactstrap",
-        backend: "",
-        github:"www.github.com/FIXME",
-        demo: "www.FIXME.com",
-        description: " A small shopping website mockup",
-        updated: "September 2020",
-      },
-
-      {
-        name: "Livestack",
-        frontend: "React",
-        backend: "Express, Node.js",
-        github:"www.github.com/FIXME",
-        demo: "www.FIXME.com",
-        description:
-          " Employed test-driven development practices to refactor components for testability and maintainability",
-        updated: "October 2020",
-      },
-      {
-        name: "Algorithm collection ",
+        name: "Warbler",
         frontend: "",
-        backend: "",
-        github:"",
-        demo: "www.FIXME.com",
-        description:
-          " HONORABLE MENTION: Demo patterns, search algorithm, and data structure implementations",
-        updated: "October 2020",
+        backend: "Flask, Jinja, postgreSQL DB",
+        github:"https://github.com/ncbui/Warbler",
+        demo: "",
+        description: " twitter clone with authentication middleware, Bcrypt, and PostgreSql database",
+        updated: "September 2020",
       },
+      {
+        name: "Jobly API",
+        backend: "Node.js, Express, PostgreSQL",
+        github:"https://github.com/tm-1900/jobly",
+        description: " A RESTful API built with Express and PostgreSql database",
+        updated: "September 2020",
+      },
+      {
+        name: "Jobly React App",
+        frontend: "React, Redux, React Router",
+        github:"https://github.com/w12190/react-jobly",
+        description: " A small shopping website built with AJAX calls to an API and filtered search feature",
+        updated: "September 2020",
+      }
     ];
     return res;
   }
@@ -84,10 +67,14 @@ export default class portfolioApi {
     return res.data;
   }
   static async mockGetContactInfo() {
-    const res = {
-      git: "https://github.com/ncbui",
-      linkedin: "linkedin.com/url",
-    };
+    const res = [{
+      site: "www.github.com/ncbui",
+      icon: ['fab', 'github']
+    },
+      {
+        site: "www.linkedin.com/in/cambui",
+        icon: ['fab', 'linkedin']
+      }];
     return res;
   }
 

@@ -1,0 +1,20 @@
+.ProjectsShort {
+    background-color: rgb(250, 248, 239, .7);
+    padding: 30vh 0;
+    font-size: 1.4rem;
+}
+
+
+.ProjectsShort-container {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+
+.ProjectsShort a {
+    color: var(--metallic-seaweed); 
+}
+
+.ProjectsShort li {
+    margin: 3vh 0;
+}

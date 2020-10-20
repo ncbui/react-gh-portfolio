@@ -1,11 +1,3 @@
-.ProjectsList-container {
-    padding-bottom: 6vh;
-}
-.card-text {
-    padding: 1px;
-    color: slategray !important;
-}
-
-.Project {
-    margin: 10vh 0;
+.ProjectsList {
+    background-color: var(--offwhite);
 }

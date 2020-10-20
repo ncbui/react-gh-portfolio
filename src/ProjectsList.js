@@ -39,8 +39,7 @@ export default function ProjectsList() {
 
   return (
       <Jumbotron fluid className="ProjectsList">
-      {!isLoading &&
-        <Container className="ProjectsList-container col-12 col-md-6 mx-auto">
+        <Container className="ProjectsList-container">
         <div className="ProjectsList-title row col-12 col-md-4 mx-auto text-right text-md-center">
               <h3 className="ProjectsList-header display-4"> Projects </h3>
               <br />
@@ -49,7 +48,6 @@ export default function ProjectsList() {
             </div>
             {createProjects()}
           </Container>
-      }
       </Jumbotron>
   )
 }

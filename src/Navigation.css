@@ -1,9 +1,27 @@
 .navbar {
-    /* background-color: thistle; */
-    color: var(--green);
+    z-index: 5;
+    font: 'Calibri';
+    font-size: larger;
+    margin-top: -5vh;
+    background-color: var(--violet);
+    padding: 20px;
+    /* border-bottom: 1vw solid var(--violet); */
+    border-bottom: .5vw solid var(--mac);
+    box-shadow: 5px 5px 5px #888888;
 }
 
-.navbar-brand h1 {
-    font-size: 70px;
-    color: var(--green);
+
+.nav-item a {
+    min-width: max-content;
+    color: var(--offwhite);
+}
+
+.nav-link {
+    color: var(--mac) !important;
+}
+
+.Nav-toggler {
+    /* border: 10px solid var(--offwhite); */
+    background-color: var(--offwhite);
+    color: var(--mac);
 }

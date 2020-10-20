@@ -1,0 +1,14 @@
+/* .Contact {
+    position: sticky;
+    right: 70px;
+    top: 200vh;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+}
+
+*/
+.Contact-icon {
+    margin: 10px;
+    color: var(--offwhite);
+} 

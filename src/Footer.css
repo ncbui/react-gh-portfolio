@@ -1,16 +1,13 @@
-.Footer-icon {
-    display: inline-block;
-    font-size: 30px;
-    position: relative;
-    margin: 5px;
-    color: var(--green);
-}
+
 
 .Footer {
-    /* background-color: thistle; */
-    color: slategray;
+    background-color: var(--violet);
+    color: var(--rosedust);
+    bottom: 0;
+    min-height: 10vh;
+    padding: 3vh 1vw;
 }
 
 .Footer a {
-    color: slategray;
+    color: var(--mac);
 }

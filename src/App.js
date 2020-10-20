@@ -4,6 +4,8 @@ import './App.css';
 import Footer from './Footer';
 import Routes from './Routes';
 import Navigation from './Navigation';
+import { Container } from "reactstrap";
+import SinglePageScroll from './SinglePageScroll';
 
 /** Renders App
  * 
@@ -12,12 +14,11 @@ import Navigation from './Navigation';
  */
 export default function App() {
   return (
-      <div className="App">
-        <Navigation />
+      <Container fluid className="App">
         <main>
-          <Routes />
+        <SinglePageScroll />
         </main>
         <Footer />
-      </div>
+      </Container>
   );
 }

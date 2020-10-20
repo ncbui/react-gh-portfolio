@@ -44,7 +44,6 @@ export default function Project({ project, position }) {
             <p>
               FIXME {project.description}
             </p>
-            { (project.frontend || project.backend) &&
               <p>
                 {project.frontend &&
                   <>Frontend: {project.frontend}</>}
@@ -52,7 +51,6 @@ export default function Project({ project, position }) {
                 {project.backend &&
                   <>Backend: {project.backend}</>}
               </p>
-            }
             <small className="text-muted">FIXME Last updated  {project.updated}</small>
           </CardText>
         </CardBody>

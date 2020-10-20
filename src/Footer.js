@@ -1,54 +1,45 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  Container,
-  Row,
-  Col,
-} from 'reactstrap';
+import { Row, Col } from "reactstrap";
 import './Footer.css'
+
+const contactInfo = [{
+  name: "GitHub",
+  site: "www.github.com/ncbui",
+  icon: ['fab', 'github']
+},
+{
+  name: "LinkedIn",
+  site: "www.linkedin.com/in/cambui",
+  icon: ['fab', 'linkedin']
+},
+  {
+    name: "bui.nct@gmail.com",
+    site: "mailto:bui.nct@gmail.com",
+    icon: ['fas', 'envelope']
+  }
+]
 
 /**Renders a collection of components */
 export default function Footer() {
 
   return (
-    <div className="Footer fixed-bottom">
-      <Container fluid className="Footer-container col-12">
-        <Row className="align-items-bottom">
-          <Col className="Footer-notes col-12 col-md-6 mr-auto text-center text-md-left align-bottom">
-            <p className="col-12 col-md-8 mr-auto">
-              <small className="Footer-notes-text">
-                fuck the system && hire me plz
+    <div fluid className="Footer col-12 align-bottom">
+      <Row>
+        <Col className="Footer-col col-6 text-left">
+            
+          <small className="Footer-notes-text">
+            © Cam Bui, 2020 <br />
+            Based on design by <a href="FIXME"> Mad X </a>
           </small>
-      </p>
-          </Col>
-          <Col className="Footer-contact col-12 col-md-6 mr-auto text-center text-md-right">
-              <a href="www.github.com/ncbui">
-                <FontAwesomeIcon
-                  icon={['fab', 'github']} 
-                  className="Footer-icon"
-                  size="xl"
-                  fixedWidth
-                />
-              </a>
-              <a href="www.linkedin.com/in/cambui">
-                <FontAwesomeIcon
-                  icon={['fab', 'linkedin']} 
-                  className="Footer-icon"
-                  size="xl"
-                  fixedWidth
-                />
-              </a>
-              <a href="www.FIXME.com">
-                <FontAwesomeIcon
-                icon={['far', 'envelope']} 
-                  className="Footer-icon"
-                  size="xl"
-                  fixedWidth
-                />
-              </a>
-          </Col>
-        </Row>
-      </Container>
+        </Col>
+        <Col className="Footer-col col-6 text-right">
+          <h5><b>Contact Me</b></h5>
+          <small className="Footer-notes-text">
+            Based on design by <a href="FIXME"> Mad X </a>
+          </small>
+        </Col>
+      </Row>
+
     </div>
   )
 }

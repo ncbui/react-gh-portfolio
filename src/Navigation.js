@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Contact from './Contact'
 import './Navigation.css';
 import {
   Collapse,
@@ -19,29 +20,26 @@ export default function Navigation() {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-      // <Navbar light expand="lg" className="Navigation fixed-top col-12">
-      <Navbar light className="Navigation fixed-top col-12">
-      <NavbarBrand href="/"><h1>Hello.</h1></NavbarBrand>
-        <NavbarToggler onClick={toggle} /> 
+    <Navbar fluid light className="Navigation col-12" expand="xl">
+      <NavbarBrand href="/">
+      </NavbarBrand>
+        <NavbarToggler onClick={toggle} className="Nav-toggler"/> 
 
         <Collapse isOpen={isOpen} navbar >
-          <Nav className="Navigation-navbar text-right mr-auto" navbar>
+          <Nav className="Navigation-navbar text-center mx-auto" navbar>
           <NavItem>
-            <NavLink href="/about">
-              About
+            <NavLink href="/">
+              HOME
           </NavLink>
           </NavItem>
             <NavItem>
-            <NavLink href="/projects">
-                Projects
+            <NavLink href="/#About">
+              ABOUT
             </NavLink>
             </NavItem>
             <NavItem>
-            <NavLink href="/exp">
-                Experience
-            </NavLink>
+            <Contact />
             </NavItem>
-
           </Nav>
         </Collapse>
       </Navbar>
