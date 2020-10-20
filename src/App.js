@@ -16,7 +16,7 @@ export default function App() {
   return (
       <Container fluid className="App">
         <main>
-        <SinglePageScroll />
+        <Routes />
         </main>
         <Footer />
       </Container>

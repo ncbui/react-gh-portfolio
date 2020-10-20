@@ -35,7 +35,7 @@ export default function ProjectsShort() {
     <Jumbotron fluid className="ProjectsShort text-center">
 
 
-      <div className="ProjectsShort" id="About">
+      <div className="ProjectsShort">
         <div className="section-container col-11 col-md-8 col-lg-6 mx-auto">
           <Card className="ProjectsShort-card section-bottom-center text-left">
             <CardBody>
