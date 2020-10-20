@@ -5,11 +5,11 @@ import './Contact.css';
 import portfolioApi from './Api';
 
 const contactInfo = [{
-  site: "www.github.com/ncbui",
+  site: "http://www.github.com/ncbui",
   icon: ['fab', 'github']
 },
 {
-  site: "www.linkedin.com/in/cambui",
+  site: "http://www.linkedin.com/in/cambui",
   icon: ['fab', 'linkedin']
 },
   {
@@ -23,7 +23,7 @@ export default function Contact() {
   return (
     <Container className="Contact ml-auto text-right">
     {
-        contactInfo.map(point => <a href={point.site} target="_blank">
+        contactInfo.map(point => <a href={point.site}>
           <FontAwesomeIcon
             icon={point.icon}
             className="Contact-icon"
