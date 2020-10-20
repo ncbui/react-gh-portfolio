@@ -1,7 +1,6 @@
 import React from "react";
 import Landing from './Landing';
 import About from './About';
-import ProjectsList from './ProjectsList';
 import ProjectsShort from './ProjectsShort';
 import Navigation from './Navigation';
 
