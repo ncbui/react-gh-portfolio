@@ -7,7 +7,7 @@ export default function Landing() {
   return (
     <div id="Landing" className="Landing jumbotron">
       <main>
-        <Fade left cascade>
+        <Fade left cascade duration={700}>
           <div>
             <h1>
               Hi, my name is <span>Cam Bui</span>

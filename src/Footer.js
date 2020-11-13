@@ -12,7 +12,7 @@ export default function Footer() {
     <section className="Footer align-bottom text-center">
       <Container>
         <main>
-          <Fade bottom cascade>
+          <Fade bottom cascade duration={300}>
             <div>
               <h2>
                 <button

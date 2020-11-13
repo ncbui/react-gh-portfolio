@@ -40,7 +40,7 @@ export default function Projects() {
             projects.map((project, idx) =>
               <Row className="Project text-left" key={project.name}>
                 <div className="Project-details col-lg-5 col-sm-12">
-                  <Fade left cascade delay={200}>
+                  <Fade left cascade delay={120}>
                     <div>
                       <h3>{project.name}</h3>
                       <p>{project.description}</p>

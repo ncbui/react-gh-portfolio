@@ -16,7 +16,7 @@ export default function Contact() {
           <Fade>
             <h2 className="section-title">Contact</h2>
           </Fade>
-          <Flip bottom cascade duration={2000}>
+          <Flip bottom cascade duration={800}>
             <div>
               <h3>
                 Would you like to work with me? 
