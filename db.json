@@ -1,20 +1,205 @@
 {
-     "techStack": {
-         "frameworks" :{
+    "me": {
+    "email": "bui.nct@gmail.com",
+    "name": "Cam Bui",
+    "phone": "",
+    "time_zone": "America/Los_Angeles",
+    "profile": {
+        "would_relocate": false,
+        "headline": "Software Engineer Intern at Live Stack",
+        "website_url": null,
+        "blog_url": null,
+        "stackoverflow_url": null,
+        "dribbble_url": null,
+        "linkedin_url": "https://www.linkedin.com/in/cambui",
+        "job_search_reason": null,
+        "desired_job_start_date": "2020-11-11",
+        "preferred_salary": 139000,
+        "desired_job_types": [
+            "contract",
+            "full_time"
+        ],
+        "preferred_contract_rate": 65,
+        "fulltime_contract_preference": "both_equally",
+        "remote": "yes"
+    },
+    "place": {
+        "address": "Oakland, CA, USA",
+        "city": "Oakland",
+        "state": "California",
+        "state_code": "CA",
+        "country": "United States",
+        "country_code": "US"
+    },
+    "places": [
+        {
+            "address": "Oakland, CA, USA",
+            "city": "Oakland",
+            "state": "California",
+            "state_code": "CA",
+            "country": "United States",
+            "country_code": "US"
+        },
+        {
+            "address": "San Jose, CA, USA",
+            "city": "San Jose",
+            "state": "California",
+            "state_code": "CA",
+            "country": "United States",
+            "country_code": "US"
+        },
+        {
+            "address": "San Diego, CA, USA",
+            "city": "San Diego",
+            "state": "California",
+            "state_code": "CA",
+            "country": "United States",
+            "country_code": "US"
+        },
+        {
+            "address": "Toronto, ON, Canada",
+            "city": "Toronto",
+            "state": "Ontario",
+            "state_code": "ON",
+            "country": "Canada",
+            "country_code": "CA"
+        },
+        {
+            "address": "London, UK",
+            "city": "London",
+            "state": "England",
+            "state_code": "England",
+            "country": "United Kingdom",
+            "country_code": "GB"
+        },
+        {
+            "address": "New Orleans, LA, USA",
+            "city": "New Orleans",
+            "state": "Louisiana",
+            "state_code": "LA",
+            "country": "United States",
+            "country_code": "US"
+        },
+        {
+            "address": "Atlanta, GA, USA",
+            "city": "Atlanta",
+            "state": "Georgia",
+            "state_code": "GA",
+            "country": "United States",
+            "country_code": "US"
+        },
+        {
+            "address": "Detroit, MI, USA",
+            "city": "Detroit",
+            "state": "Michigan",
+            "state_code": "MI",
+            "country": "United States",
+            "country_code": "US"
+        },
+        {
+            "address": "Austin, TX, USA",
+            "city": "Austin",
+            "state": "Texas",
+            "state_code": "TX",
+            "country": "United States",
+            "country_code": "US"
+        },
+        {
+            "address": "Seattle, WA, USA",
+            "city": "Seattle",
+            "state": "Washington",
+            "state_code": "WA",
+            "country": "United States",
+            "country_code": "US"
+        },
+        {
+            "address": "New York, NY, USA",
+            "city": "New York",
+            "state": "New York",
+            "state_code": "NY",
+            "country": "United States",
+            "country_code": "US"
+        }
+    ],
+    "employments": [
+        {
+            "company": "Live Stack",
+            "position": "Software Engineer Intern",
+            "started": "2020-09-16",
+            "ended": "2020-10-16",
+            "current": false,
+            "summary": "●   Built tests and product features for event-hosting platform using Javascript, React, Express, PostgreSQL.\n●   Wrote unit and integration tests to guide component refactor using React Testing-Library and Jest.\n●   Refactored complex React component into modular, testable, maintainable components\n●   Added activity feed feature using the Sockets protocol to send server-initiated transfers with Socket.io."
+        },
+        {
+            "company": "Invitae",
+            "position": "Data Processing Associate",
+            "started": "2018-05-16",
+            "ended": "2020-05-16",
+            "current": false,
+            "summary": "●   Triaged incoming genetic samples according to test type and patient medical history.\n●   Optimized quality control flow by migrating Salesforce reports and documentation into Tableau dashboards.\n●   Served as a stakeholder to implement analytics software used to understand healthcare providers usage."
+        },
+        {
+            "company": "Action & Consciousness Lab, San Francisco State University",
+            "position": "Research Assistant",
+            "started": "2016-08-16",
+            "ended": "2019-12-16",
+            "current": false,
+            "summary": "Conducted behavioral experiments in a cognitive psychology laboratory by designing experimental\nprotocols, analyzing data with R, and preparing manuscripts for journal submission."
+        },
+        {
+            "company": "Action & Consciousness Lab, San Francisco State University",
+            "position": "Health Policy Intern",
+            "started": "2016-08-16",
+            "ended": "2017-06-16",
+            "current": false,
+            "summary": "●   Conducted literature reviews and research regarding food and housing insecurity amongst students in the public university systems in California that supported the creation of SF State's Basic Needs Initiative\n●   Evaluated student needs on behalf the health center's programming board by reviewing existing research\nand university programs, conducting group interviews, and analyzing data for themes and insights."
+        },
+        {
+            "company": "Murphy, McKay, and Associates",
+            "position": "IT Relocation Technician",
+            "started": "2010-10-16",
+            "ended": "2015-09-16",
+            "current": false,
+            "summary": "Provided IT support during office and server room relocations with technical documentation, hardware\ninstallation, and trouble-shooting network, software, hardware issues on Windows and Mac OS systems."
+        }
+    ],
+    "educations": [
+        {
+            "university": "Rithm School",
+            "degree": "Full-stack Web Development",
+            "graduation_year": 2020
+        },
+        {
+            "university": "San Francisco State University",
+            "degree": "31 of 34 units completed towards a Masters in Psychology",
+            "graduation_year": 2018
+        },
+        {
+            "university": "San Francisco State University",
+            "degree": "Bachelors in Kinesiology",
+            "graduation_year": 2016
+        }
+    ]
+},
+
+"projects": {
+    "techStack": {
+        "frameworks": {
             "front-end": [
                 "React"
             ],
             "back-end": [
                 "Express",
                 "Flask"
-            ]}
-     },
-     "aboutMe": {
-         "name": "Cam Bui",
-         "subtitle": "researcher turned software engineer",
-         "long": " FIXME longer text about me. blah blah developer amused systems interfacing and dancing with each other. bahcelor studied how the brain navigates physics via this meatsuit. hobby and research with how perception leads to cognition by way of the conscious field. lemme optimize your front end"
-     },
-     "projectsList": [
+            ]
+        }
+    },
+    "aboutMe": {
+        "name": "Cam Bui",
+        "subtitle": "researcher turned software engineer",
+        "long": " FIXME longer text about me. blah blah developer amused systems interfacing and dancing with each other. bahcelor studied how the brain navigates physics via this meatsuit. hobby and research with how perception leads to cognition by way of the conscious field. lemme optimize your front end"
+    },
+    "projectsList": [
         {
             "name": "microblog",
             "libraries": "Redux, React, reactstrap, and json-server CRUD backend",
@@ -36,9 +221,10 @@
             "description": " A single-page-app that highlights patterns, search algorithms, and data structure   ",
             "updated": "September 2020"
         }
-    ], 
-     "contactInfo":  {
-         "git": "https://github.com/ncbui",
-         "linkedin": "linkedin.com/url"
-     }
+    ],
+    "contactInfo": {
+        "git": "https://github.com/ncbui",
+        "linkedin": "linkedin.com/url"
+    }
+}
 }
