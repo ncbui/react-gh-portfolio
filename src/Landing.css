@@ -1,0 +1,36 @@
+#Landing {
+    background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 1), 0%, rgba(0, 0, 0, .8), 10%, rgba(0, 0, 0, 0)),
+        url("./rainbow-poly.jpg");
+    background-position: top right;
+    color: #fff;
+    background-size:cover;
+    overflow: hidden;
+    position: relative;
+    transform: scaleX(-1);
+    margin-bottom: -1vh;
+}
+
+
+#Landing::after {
+    transform: scaleX(-1);
+    content: "";
+    position: absolute;
+    background: rgba(0,0,0,.1);
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.Landing-text {
+    transform: scaleX(-1);
+    text-shadow: 2px 2px 8px #000000;
+}
+
+.Landing-icon {
+    color: #fff;
+    text-shadow: 2px 2px 8px #000000;
+}
