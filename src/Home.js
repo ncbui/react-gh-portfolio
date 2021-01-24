@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Jumbotron } from "reactstrap";
-import Projects from './Projects';
+import Projects from './ProjectsList';
 import rainbowPoly from './rainbow-poly.jpg';
 
 function Home({ data }) {
@@ -14,14 +14,14 @@ function Home({ data }) {
     <Jumbotron fluid className="Home">
       <Container>
         <Row>
-          <Col className="Home-tag col-12 col-md-4 mr-auto">
+          <Col className="Home-tag col-8 col-md-4 offset-md-1 mx-auto mr-md-auto text-md-left">
             <p className="lead">
               <b>
                 {about['tagline']}
               </b>
             </p>
           </Col>
-          <Col className="Home-body col-12 col-md-7 ml-auto">
+          <Col className="Home-body col-12 col-md-6 mr-auto">
             <h6>Hi there,</h6>
             <p> My name is <b>{about['name']}</b>. {about['description']} </p>
             <p> {about['overview']}</p>

@@ -1,7 +1,4 @@
 import React from "react";
-import { Container, Jumbotron, Card, CardBody, CardSubtitle, Col, CardImg } from "reactstrap";
-import { projects } from "./App";
-import rainbowPoly from './rainbow-poly.jpg';
 
 function ProjectCard(project) {
 

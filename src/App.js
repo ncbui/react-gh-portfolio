@@ -2,7 +2,8 @@
 import { Redirect, Route, Switch } from 'react-router';
 import NavBar from './NavBar';
 import Resume from './Resume';
-import Projects from './Projects';
+import ProjectsList from './ProjectsList';
+import Project from './Project';
 import Home from './Home';
 import Landing from './Landing';
 import './App.css';
@@ -21,7 +22,8 @@ function App({ projects, about, contact, resume }) {
     <Landing data={contact}/>
       <Switch>
           <Route exact path="/resume"> <Resume data={resume}/> </Route>
-          <Route exact path="/projects"> <Projects data={projects}/> </Route>
+          <Route exact path="/project/:id"> <Project data={projects}/> </Route>
+          <Route exact path="/projects"> <ProjectsList data={projects}/> </Route>
             <Route exact path="/"> <Home data={{about, projects}}/> </Route>
         <Redirect to="/" />
       </Switch>
@@ -38,40 +40,34 @@ function App({ projects, about, contact, resume }) {
 
 export const projects = [
   {
+    name: "Anaconda",
+    tech: "javascript, Canvas API, jquery",
+    code_url: "https://github.com/ncbui/Anaconda-game",
+    demo_url: "https://ncbui.github.io/Anaconda-game/",
+    description: " Object-oriented remix of the Blockade arcade game built on the Canvas API and javascript. Play as a snake against an AI guided by A* search algorithm",
+    updated: "January 2021",
+    id:"anaconda"
+  },
+  {
     name: "Warbler",
-    languages: "Flask, Jinja, postgreSQL DB",
+    tech: "Flask, Jinja, postgreSQL DB",
     code_url: "https://github.com/ncbui/Warbler",
-    demo_url: "",
+    demo_url: "https://cb-warbler-2020.herokuapp.com/",
     description: " Twitter clone with authentication middleware, Bcrypt hashing, and postgreSQL database",
     updated: "September 2020",
-  },
-  {
-    name: "Jobly API",
-    languages: "Node.js, Express, PostgreSQL",
-    code_url: "https://github.com/tm-1900/jobly",
-    demo_url: "",
-    description: " A RESTful API built with Node.js, Express and postgreSQL database",
-    updated: "September 2020",
-  },
-  {
-    name: "Jobly React App",
-    languages: "React, Redux, React Router",
-    code_url: "https://github.com/w12190/react-jobly",
-    demo_url: "",
-    description: " A small shopping website with filtered search, client-side rendering, and AJAX calls to an API",
-    updated: "September 2020",
+    id:"warbler"
   },
 ];
 
 export const about = 
   {
     name: "Cam Bui",
-    tagline: "software developer with an non-traditional background",
+    tagline: "software developer with a non-traditional background",
     description: "I recently finished Rithm School's Web Developer intensive and I'm looking for my first software developer role.",
-  overview:"I spent the last two years working with health records at a genetic data firm, and over a decade volunteering with community health orgs.",
+    overview:"I've worked with health records at a genetic data firm, published my work as a research assistant, and spent over a decade volunteering with community wellness orgs.",
     lab: "http://online.sfsu.edu/morsella/research.html",
     publication: "https://doi.org/10.1037/cns0000208",
-    values: "I enjoy giving people access to info to help them make choices that will reshape their inner and outer worlds.",
+    values: "I enjoy building tools to help people reshape their inner and outer worlds.",
     hobbies: "In my spare time I enjoy painting, and turning leftovers into gold with vermiculture.",
   };
 

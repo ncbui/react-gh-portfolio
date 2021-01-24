@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Jumbotron, Card, CardBody, CardSubtitle, Col, CardImg } from "reactstrap";
+import { Container, Jumbotron } from "reactstrap";
 import rainbowPoly from './rainbow-poly.jpg'; 
 import ProjectCard from './ProjectCard';
 
