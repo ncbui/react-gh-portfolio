@@ -41,7 +41,7 @@ export default function About() {
                 In my spare time I paint and turn leftovers into gold with vermiculture.
                 </p>
                 <br />
-                <a href={resume} className="btn btn-lined" download>Resume</a>
+                <a href={resume} className="btn btn-lined">Resume</a>
               </div>
             </Fade>
           </Row>
