@@ -1,4 +1,4 @@
-
+import React from "react";
 import { Redirect, Route, Switch } from 'react-router';
 import NavBar from './NavBar';
 import Resume from './Resume';
@@ -9,8 +9,7 @@ import Landing from './Landing';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 import rainbowPoly from './rainbow-poly.jpg';
-import resumeImg from './resume-dec-2020.jpg'
-import resumePdf from './resume-dec-2020.pdf'
+import resume from './resume.pdf'
 
 
 function App({ projects, about, contact, resume }) {
@@ -91,10 +90,6 @@ export const contact = [
   },
 ];
 
-const resume = {
-  url: resumePdf,
-  img: resumeImg,
-}
 
 App.defaultProps = { projects, about, contact, resume };
 
