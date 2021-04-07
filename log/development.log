@@ -1490,3 +1490,13 @@ Processing by ProjectsController#index as HTML
 Completed 200 OK in 25ms (Views: 18.4ms | ActiveRecord: 2.9ms | Allocations: 10734)
 
 
+Started GET "/" for 127.0.0.1 at 2021-04-06 21:30:55 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:22
+  Rendered projects/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1696)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.7ms | Allocations: 6734)
+
+
