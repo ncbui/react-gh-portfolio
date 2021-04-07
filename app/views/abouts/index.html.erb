@@ -33,4 +33,11 @@
 
 <%= link_to 'New About', new_about_path %>
 
+<% else %>
+ <% @abouts.each do |about| %>
+       <p>Hi, I'm <%= about.firstname %> <%= about.lastname %>.</p>
+       <p><%= about.tagline %> </p>
+       <p><%= about.hobbies %> </p>
+    <% end %>
+
 <% end %>

@@ -8,38 +8,51 @@
 </h1>
 </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Demo</th>
-      <th>Github</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<div class="projects">
+    <table class="projects-table">
+    <thead>
+        <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Demo</th>
+        <th>Github</th>
+        <th colspan="3"></th>
+        </tr>
+    </thead>
 
-  <tbody>
-    <% @projects.each do |project| %>
-      <tr>
-        <td><%= project.name %></td>
-        <td><%= project.description %></td>
-        <td><%= project.demo %></td>
-        <td><%= project.github %></td>
-        <% if user_signed_in? %>
-            <td><%= link_to 'Show', project %></td>
-            <td><%= link_to 'Edit', edit_project_path(project) %></td>
-            <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <tbody>
+        <% @projects.each do |project| %>
+        <tr>
+            <td><%= project.name %></td>
+            <td><%= project.description %></td>
+            <td><%= project.demo %></td>
+            <td><%= project.github %></td>
+            <% if user_signed_in? %>
+                <td><%= link_to 'Show', project %></td>
+                <td><%= link_to 'Edit', edit_project_path(project) %></td>
+                <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <% end %>
+        </tr>
         <% end %>
-      </tr>
+    </tbody>
+        <% if user_signed_in? %>
+    <tfoot>
+       <tr>
+       <td><%= link_to 'New Project', new_project_path %> </td>
+       </tr>
+    </tfoot>
     <% end %>
-  </tbody>
-</table>
+    </table>
 
-<br>
+    <br>
 
-<% if user_signed_in? %>
-    <%= link_to 'New Project', new_project_path %>
-<% end %>
+<% if !user_signed_in? %>
+    <% render = "contacts/contact" %>
+<%end%>
+
+</div>
+
+
+
 
 
