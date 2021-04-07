@@ -1473,3 +1473,20 @@ Processing by ProjectsController#index as HTML
 Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 1.3ms | Allocations: 5447)
 
 
+Started GET "/" for 127.0.0.1 at 2021-04-06 21:22:22 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.1ms | Allocations: 186)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 1004)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 21:23:39 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:17
+  Rendered projects/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 5358)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 18.4ms | ActiveRecord: 2.9ms | Allocations: 10734)
+
+

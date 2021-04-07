@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root "projects#index"
+  
   resources :images
   resources :projects
   resources :abouts
