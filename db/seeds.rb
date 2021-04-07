@@ -25,3 +25,10 @@ Contact.create(
     site: 'CodePen',
     url: 'https://codepen.io/cambui'
 )
+
+Project.create(
+    name:'',
+    description:'',
+    github:'',
+    demo:''
+)

@@ -490,3 +490,383 @@ Processing by ContactsController#index as HTML
 Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.5ms | Allocations: 5129)
 
 
+Started GET "/images" for 127.0.0.1 at 2021-04-06 21:01:30 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3.6) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3.6) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5160695226164068290)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateImages (20210407040037)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.4ms)[0m  [1m[35mCREATE TABLE "images" ("id" bigserial primary key, "src" character varying, "project_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_d34aa88797"
+FOREIGN KEY ("project_id")
+  REFERENCES "projects" ("id")
+)[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE  INDEX  "index_images_on_project_id" ON "images"  ("project_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210407040037"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5160695226164068290)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/images" for 127.0.0.1 at 2021-04-06 21:01:47 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.7ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:15
+  Rendered images/index.html.erb within layouts/application (Duration: 18.1ms | Allocations: 1444)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 117ms (Views: 100.5ms | ActiveRecord: 2.1ms | Allocations: 28479)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAbout Create (0.6ms)[0m  [1m[32mINSERT INTO "abouts" ("firstname", "lastname", "tagline", "hobbies", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["firstname", "Cam"], ["lastname", "Bui"], ["tagline", "I'm a software developer based in the SF Bay Area. I get a kick out of building tools to help us reshape our inner and outer worlds."], ["hobbies", "In my spare time I paint and turn leftovers into gold with vermiculture."], ["created_at", "2021-04-07 04:06:23.568970"], ["updated_at", "2021-04-07 04:06:23.568970"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContact Create (0.4ms)[0m  [1m[32mINSERT INTO "contacts" ("site", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["site", "GitHub"], ["url", "https://github.com/ncbui"], ["created_at", "2021-04-07 04:06:23.583250"], ["updated_at", "2021-04-07 04:06:23.583250"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContact Create (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("site", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["site", "LinkedIn"], ["url", "https://www.linkedin.com/in/cambui/"], ["created_at", "2021-04-07 04:06:23.587125"], ["updated_at", "2021-04-07 04:06:23.587125"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContact Create (0.2ms)[0m  [1m[32mINSERT INTO "contacts" ("site", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["site", "CodePen"], ["url", "https://codepen.io/cambui"], ["created_at", "2021-04-07 04:06:23.591099"], ["updated_at", "2021-04-07 04:06:23.591099"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAbout Create (0.5ms)[0m  [1m[32mINSERT INTO "abouts" ("firstname", "lastname", "tagline", "hobbies", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["firstname", "Cam"], ["lastname", "Bui"], ["tagline", "I'm a software developer based in the SF Bay Area. I get a kick out of building tools to help us reshape our inner and outer worlds."], ["hobbies", "In my spare time I paint and turn leftovers into gold with vermiculture."], ["created_at", "2021-04-07 04:07:24.288972"], ["updated_at", "2021-04-07 04:07:24.288972"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContact Create (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("site", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["site", "GitHub"], ["url", "https://github.com/ncbui"], ["created_at", "2021-04-07 04:07:24.300568"], ["updated_at", "2021-04-07 04:07:24.300568"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContact Create (0.2ms)[0m  [1m[32mINSERT INTO "contacts" ("site", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["site", "LinkedIn"], ["url", "https://www.linkedin.com/in/cambui/"], ["created_at", "2021-04-07 04:07:24.304075"], ["updated_at", "2021-04-07 04:07:24.304075"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContact Create (0.2ms)[0m  [1m[32mINSERT INTO "contacts" ("site", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["site", "CodePen"], ["url", "https://codepen.io/cambui"], ["created_at", "2021-04-07 04:07:24.307147"], ["updated_at", "2021-04-07 04:07:24.307147"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (1.3ms)[0m  [1m[32mINSERT INTO "projects" ("name", "description", "demo", "github", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", ""], ["description", ""], ["demo", ""], ["github", ""], ["created_at", "2021-04-07 04:07:24.317617"], ["updated_at", "2021-04-07 04:07:24.317617"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAbout Create (0.6ms)[0m  [1m[32mINSERT INTO "abouts" ("firstname", "lastname", "tagline", "hobbies", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["firstname", "Cam"], ["lastname", "Bui"], ["tagline", "I'm a software developer based in the SF Bay Area. I get a kick out of building tools to help us reshape our inner and outer worlds."], ["hobbies", "In my spare time I paint and turn leftovers into gold with vermiculture."], ["created_at", "2021-04-07 04:07:36.165176"], ["updated_at", "2021-04-07 04:07:36.165176"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContact Create (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("site", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["site", "GitHub"], ["url", "https://github.com/ncbui"], ["created_at", "2021-04-07 04:07:36.177569"], ["updated_at", "2021-04-07 04:07:36.177569"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContact Create (0.2ms)[0m  [1m[32mINSERT INTO "contacts" ("site", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["site", "LinkedIn"], ["url", "https://www.linkedin.com/in/cambui/"], ["created_at", "2021-04-07 04:07:36.180941"], ["updated_at", "2021-04-07 04:07:36.180941"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContact Create (0.2ms)[0m  [1m[32mINSERT INTO "contacts" ("site", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["site", "CodePen"], ["url", "https://codepen.io/cambui"], ["created_at", "2021-04-07 04:07:36.183794"], ["updated_at", "2021-04-07 04:07:36.183794"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("name", "description", "demo", "github", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", ""], ["description", ""], ["demo", ""], ["github", ""], ["created_at", "2021-04-07 04:07:36.194285"], ["updated_at", "2021-04-07 04:07:36.194285"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAbout Create (0.5ms)[0m  [1m[32mINSERT INTO "abouts" ("firstname", "lastname", "tagline", "hobbies", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["firstname", "Cam"], ["lastname", "Bui"], ["tagline", "I'm a software developer based in the SF Bay Area. I get a kick out of building tools to help us reshape our inner and outer worlds."], ["hobbies", "In my spare time I paint and turn leftovers into gold with vermiculture."], ["created_at", "2021-04-07 04:07:44.562571"], ["updated_at", "2021-04-07 04:07:44.562571"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContact Create (0.3ms)[0m  [1m[32mINSERT INTO "contacts" ("site", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["site", "GitHub"], ["url", "https://github.com/ncbui"], ["created_at", "2021-04-07 04:07:44.575173"], ["updated_at", "2021-04-07 04:07:44.575173"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContact Create (0.2ms)[0m  [1m[32mINSERT INTO "contacts" ("site", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["site", "LinkedIn"], ["url", "https://www.linkedin.com/in/cambui/"], ["created_at", "2021-04-07 04:07:44.578837"], ["updated_at", "2021-04-07 04:07:44.578837"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContact Create (0.2ms)[0m  [1m[32mINSERT INTO "contacts" ("site", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["site", "CodePen"], ["url", "https://codepen.io/cambui"], ["created_at", "2021-04-07 04:07:44.582131"], ["updated_at", "2021-04-07 04:07:44.582131"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "description", "demo", "github", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", ""], ["description", ""], ["demo", ""], ["github", ""], ["created_at", "2021-04-07 04:07:44.593249"], ["updated_at", "2021-04-07 04:07:44.593249"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAbout Create (0.4ms)[0m  [1m[32mINSERT INTO "abouts" ("firstname", "lastname", "tagline", "hobbies", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["firstname", "Cam"], ["lastname", "Bui"], ["tagline", "I'm a software developer based in the SF Bay Area. I get a kick out of building tools to help us reshape our inner and outer worlds."], ["hobbies", "In my spare time I paint and turn leftovers into gold with vermiculture."], ["created_at", "2021-04-07 04:07:56.234223"], ["updated_at", "2021-04-07 04:07:56.234223"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContact Create (0.4ms)[0m  [1m[32mINSERT INTO "contacts" ("site", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["site", "GitHub"], ["url", "https://github.com/ncbui"], ["created_at", "2021-04-07 04:07:56.244932"], ["updated_at", "2021-04-07 04:07:56.244932"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContact Create (0.2ms)[0m  [1m[32mINSERT INTO "contacts" ("site", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["site", "LinkedIn"], ["url", "https://www.linkedin.com/in/cambui/"], ["created_at", "2021-04-07 04:07:56.248372"], ["updated_at", "2021-04-07 04:07:56.248372"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContact Create (0.1ms)[0m  [1m[32mINSERT INTO "contacts" ("site", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["site", "CodePen"], ["url", "https://codepen.io/cambui"], ["created_at", "2021-04-07 04:07:56.251777"], ["updated_at", "2021-04-07 04:07:56.251777"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.5ms)[0m  [1m[32mINSERT INTO "projects" ("name", "description", "demo", "github", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", ""], ["description", ""], ["demo", ""], ["github", ""], ["created_at", "2021-04-07 04:07:56.262710"], ["updated_at", "2021-04-07 04:07:56.262710"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mAbout Create (0.4ms)[0m  [1m[32mINSERT INTO "abouts" ("firstname", "lastname", "tagline", "hobbies", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["firstname", "Cam"], ["lastname", "Bui"], ["tagline", "I'm a software developer based in the SF Bay Area. I get a kick out of building tools to help us reshape our inner and outer worlds."], ["hobbies", "In my spare time I paint and turn leftovers into gold with vermiculture."], ["created_at", "2021-04-07 04:08:17.371743"], ["updated_at", "2021-04-07 04:08:17.371743"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContact Create (0.4ms)[0m  [1m[32mINSERT INTO "contacts" ("site", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["site", "GitHub"], ["url", "https://github.com/ncbui"], ["created_at", "2021-04-07 04:08:17.382037"], ["updated_at", "2021-04-07 04:08:17.382037"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContact Create (0.2ms)[0m  [1m[32mINSERT INTO "contacts" ("site", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["site", "LinkedIn"], ["url", "https://www.linkedin.com/in/cambui/"], ["created_at", "2021-04-07 04:08:17.385521"], ["updated_at", "2021-04-07 04:08:17.385521"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mContact Create (0.2ms)[0m  [1m[32mINSERT INTO "contacts" ("site", "url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["site", "CodePen"], ["url", "https://codepen.io/cambui"], ["created_at", "2021-04-07 04:08:17.388333"], ["updated_at", "2021-04-07 04:08:17.388333"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mProject Create (0.3ms)[0m  [1m[32mINSERT INTO "projects" ("name", "description", "demo", "github", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", ""], ["description", ""], ["demo", ""], ["github", ""], ["created_at", "2021-04-07 04:08:17.398391"], ["updated_at", "2021-04-07 04:08:17.398391"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/images" for 127.0.0.1 at 2021-04-06 21:08:37 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (0.6ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:15
+  Rendered images/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1444)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 77ms (Views: 50.8ms | ActiveRecord: 3.8ms | Allocations: 16233)
+
+
+Started GET "/images/new" for 127.0.0.1 at 2021-04-06 21:08:38 -0700
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 11.3ms | Allocations: 2646)
+  Rendered images/new.html.erb within layouts/application (Duration: 13.5ms | Allocations: 2981)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 23.1ms | ActiveRecord: 10.3ms | Allocations: 9868)
+
+
+Started POST "/images" for 127.0.0.1 at 2021-04-06 21:08:44 -0700
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"jGbleM9Rk1WI9hiA5ydi4NDrGs2RAWckscCKseecOGUH6IesiUMm0D3RM5ZbcF+lgzp85iuq/aKINuvwsX8yig==", "image"=>{"src"=>"default.png", "project_id"=>""}, "commit"=>"Create Image"}
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 2.0ms | Allocations: 847)
+  Rendered images/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 930)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 422 Unprocessable Entity in 19ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 7367)
+
+
+Started POST "/images" for 127.0.0.1 at 2021-04-06 21:08:47 -0700
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"++8e/Y25l/0YktNB8YbfpngahIrBMo76JU6DuY2xzRbaZaG3GIHx4stNxpVfiNyifFS9u3pjmjPhfFQFKrOcVQ==", "image"=>{"src"=>"default.png", "project_id"=>"1"}, "commit"=>"Create Image"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/images_controller.rb:27:in `block in create'
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:27:in `block in create'
+  [1m[36mImage Create (4.6ms)[0m  [1m[32mINSERT INTO "images" ("src", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["src", "default.png"], ["project_id", 1], ["created_at", "2021-04-07 04:08:47.970861"], ["updated_at", "2021-04-07 04:08:47.970861"]]
+  ↳ app/controllers/images_controller.rb:27:in `block in create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/images_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/images/1
+Completed 302 Found in 37ms (ActiveRecord: 10.5ms | Allocations: 9352)
+
+
+Started GET "/images/1" for 127.0.0.1 at 2021-04-06 21:08:47 -0700
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:62:in `set_image'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 252)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 7.8ms | ActiveRecord: 0.5ms | Allocations: 5217)
+
+
+Started GET "/images" for 127.0.0.1 at 2021-04-06 21:08:50 -0700
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (1.3ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:15
+  Rendered images/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 802)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 1.3ms | Allocations: 4931)
+
+
+Started GET "/images/new" for 127.0.0.1 at 2021-04-06 21:08:52 -0700
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 2.8ms | Allocations: 686)
+  Rendered images/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 768)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms | Allocations: 4881)
+
+
+Started POST "/images" for 127.0.0.1 at 2021-04-06 21:08:55 -0700
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"v3O7AkPEupi9z5glF7AuQ0WCFN+Q+n4x4x0gTNbcAT00/dnWBdYPHQjoszOr5xMGFlNy9CpR5Lfa60ENgD8L0g==", "image"=>{"src"=>"default.png", "project_id"=>"1"}, "commit"=>"Create Image"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/images_controller.rb:27:in `block in create'
+  [1m[36mProject Load (1.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:27:in `block in create'
+  [1m[36mImage Create (0.4ms)[0m  [1m[32mINSERT INTO "images" ("src", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["src", "default.png"], ["project_id", 1], ["created_at", "2021-04-07 04:08:55.341640"], ["updated_at", "2021-04-07 04:08:55.341640"]]
+  ↳ app/controllers/images_controller.rb:27:in `block in create'
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/images_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/images/2
+Completed 302 Found in 17ms (ActiveRecord: 4.8ms | Allocations: 4069)
+
+
+Started GET "/images/2" for 127.0.0.1 at 2021-04-06 21:08:55 -0700
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mImage Load (0.3ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:62:in `set_image'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.3ms | Allocations: 4784)
+
+
+Started GET "/images" for 127.0.0.1 at 2021-04-06 21:08:56 -0700
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (4.4ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:15
+  Rendered images/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 920)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 16.2ms | ActiveRecord: 4.4ms | Allocations: 5040)
+
+
+Started GET "/images/new" for 127.0.0.1 at 2021-04-06 21:08:57 -0700
+Processing by ImagesController#new as HTML
+  Rendering images/new.html.erb within layouts/application
+  Rendered images/_form.html.erb (Duration: 2.9ms | Allocations: 684)
+  Rendered images/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 766)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 4877)
+
+
+Started POST "/images" for 127.0.0.1 at 2021-04-06 21:08:59 -0700
+Processing by ImagesController#create as HTML
+  Parameters: {"authenticity_token"=>"nTJE1rQaC5yoOorB/UqMXnSHS4YkNh6tvmH94hAa684WvCYC8gi+GR0doddBHbEbJ1YtrZ6dhCuHl5yjRvnhIQ==", "image"=>{"src"=>"default.png", "project_id"=>"1"}, "commit"=>"Create Image"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/images_controller.rb:27:in `block in create'
+  [1m[36mProject Load (2.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:27:in `block in create'
+  [1m[36mImage Create (0.5ms)[0m  [1m[32mINSERT INTO "images" ("src", "project_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["src", "default.png"], ["project_id", 1], ["created_at", "2021-04-07 04:08:59.784481"], ["updated_at", "2021-04-07 04:08:59.784481"]]
+  ↳ app/controllers/images_controller.rb:27:in `block in create'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/images_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/images/3
+Completed 302 Found in 14ms (ActiveRecord: 3.5ms | Allocations: 4075)
+
+
+Started GET "/images/3" for 127.0.0.1 at 2021-04-06 21:08:59 -0700
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:62:in `set_image'
+  Rendering images/show.html.erb within layouts/application
+  Rendered images/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.4ms | Allocations: 4756)
+
+
+Started GET "/images" for 127.0.0.1 at 2021-04-06 21:09:00 -0700
+Processing by ImagesController#index as HTML
+  Rendering images/index.html.erb within layouts/application
+  [1m[36mImage Load (1.5ms)[0m  [1m[34mSELECT "images".* FROM "images"[0m
+  ↳ app/views/images/index.html.erb:15
+  Rendered images/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1037)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 1.5ms | Allocations: 5151)
+
+
+Started GET "/images/project" for 127.0.0.1 at 2021-04-06 21:09:06 -0700
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"project"}
+  [1m[36mImage Load (0.5ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:62:in `set_image'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.5ms | Allocations: 1194)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Image with 'id'=project):
+  
+app/controllers/images_controller.rb:62:in `set_image'
+Started GET "/images/projects" for 127.0.0.1 at 2021-04-06 21:09:09 -0700
+Processing by ImagesController#show as HTML
+  Parameters: {"id"=>"projects"}
+  [1m[36mImage Load (0.4ms)[0m  [1m[34mSELECT "images".* FROM "images" WHERE "images"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/images_controller.rb:62:in `set_image'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.4ms | Allocations: 1215)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Image with 'id'=projects):
+  
+app/controllers/images_controller.rb:62:in `set_image'
+Started GET "/images/projects/1" for 127.0.0.1 at 2021-04-06 21:09:13 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/projects/1"):
+  
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
