@@ -5048,3 +5048,359 @@ Processing by ProjectsController#index as HTML
 Completed 200 OK in 30ms (Views: 22.6ms | ActiveRecord: 4.4ms | Allocations: 10449)
 
 
+Started GET "/projects" for 127.0.0.1 at 2021-04-06 23:24:18 -0700
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:24
+  Rendered projects/index.html.erb within layouts/application (Duration: 22.7ms | Allocations: 5623)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 588)
+Completed 200 OK in 56ms (Views: 41.5ms | ActiveRecord: 7.8ms | Allocations: 15872)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-04-06 23:24:21 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 589)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.3ms | Allocations: 4691)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 185)
+Completed 200 OK in 36ms (Views: 18.0ms | ActiveRecord: 4.3ms | Allocations: 14936)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-04-06 23:24:25 -0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"DdhIU61nLorBsd35jverFirkSoXUY2nXkAu8E2qtjdb5+3sbkG/ejSumL1UavDpZ523OdZX1hq4OyUnD7H0kdQ==", "user"=>{"email"=>"z8764532z@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "z8764532z@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 221ms (ActiveRecord: 1.7ms | Allocations: 5219)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:24:25 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:30
+  Rendered projects/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2341)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 145)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.8ms | Allocations: 6690)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:26:13 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:24
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:30
+  Rendered projects/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 4018)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.8ms | Allocations: 5307)
+
+
+  
+ActionView::Template::Error (Missing partial contacts/_index.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/zz/Documents/projects/portfolio/app/views"
+  * "/Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.7.3/app/views"
+  * "/Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actiontext-6.0.3.6/app/views"
+  * "/Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionmailbox-6.0.3.6/app/views"
+):
+    46:     <% end %>
+    47: </div>
+    48: 
+    49: <%= render "contacts/index.html.erb" %>
+  
+app/views/projects/index.html.erb:49
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:26:55 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:24
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:30
+  Rendered projects/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 4062)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.1ms | Allocations: 5383)
+
+
+  
+ActionView::Template::Error (Missing partial contacts/_show.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/zz/Documents/projects/portfolio/app/views"
+  * "/Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.7.3/app/views"
+  * "/Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actiontext-6.0.3.6/app/views"
+  * "/Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionmailbox-6.0.3.6/app/views"
+):
+    46:     <% end %>
+    47: </div>
+    48: 
+    49: <%= render "contacts/show.html.erb" %>
+  
+app/views/projects/index.html.erb:49
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:26:56 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:30
+  Rendered projects/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 3274)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.7ms | Allocations: 3722)
+
+
+  
+ActionView::Template::Error (Missing partial contacts/_show.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/zz/Documents/projects/portfolio/app/views"
+  * "/Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.7.3/app/views"
+  * "/Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actiontext-6.0.3.6/app/views"
+  * "/Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionmailbox-6.0.3.6/app/views"
+):
+    46:     <% end %>
+    47: </div>
+    48: 
+    49: <%= render "contacts/show.html.erb" %>
+  
+app/views/projects/index.html.erb:49
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:27:20 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:30
+  Rendered projects/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 4025)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.5ms | Allocations: 5317)
+
+
+  
+ActionView::Template::Error (Missing partial /_contacts with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/zz/Documents/projects/portfolio/app/views"
+  * "/Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.7.3/app/views"
+  * "/Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actiontext-6.0.3.6/app/views"
+  * "/Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionmailbox-6.0.3.6/app/views"
+):
+    46:     <% end %>
+    47: </div>
+    48: 
+    49: <%= render "contacts/" %>
+  
+app/views/projects/index.html.erb:49
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:28:13 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:24
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:30
+  Rendered projects/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 4375)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.1ms | Allocations: 5658)
+
+
+  
+ActionView::Template::Error (Missing partial projects/_@contacts, application/_@contacts with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/zz/Documents/projects/portfolio/app/views"
+  * "/Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.7.3/app/views"
+  * "/Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actiontext-6.0.3.6/app/views"
+  * "/Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionmailbox-6.0.3.6/app/views"
+):
+    46:     <% end %>
+    47: </div>
+    48: 
+    49: <%= render "@contacts" %>
+  
+app/views/projects/index.html.erb:49
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:29:28 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:30
+  Rendered projects/index.html.erb within layouts/application (Duration: 39.9ms | Allocations: 11283)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 12.0ms | Allocations: 12980)
+
+
+  
+ActionView::Template::Error (Missing partial projects/_@contacts, application/_@contacts with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/zz/Documents/projects/portfolio/app/views"
+  * "/Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.7.3/app/views"
+  * "/Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actiontext-6.0.3.6/app/views"
+  * "/Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionmailbox-6.0.3.6/app/views"
+):
+    46:     <% end %>
+    47: </div>
+    48: 
+    49: <%= render "@contacts" %>
+  
+app/views/projects/index.html.erb:49
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:29:29 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:30
+  Rendered projects/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 3279)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.8ms | Allocations: 3753)
+
+
+  
+ActionView::Template::Error (Missing partial projects/_@contacts, application/_@contacts with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/zz/Documents/projects/portfolio/app/views"
+  * "/Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/devise-4.7.3/app/views"
+  * "/Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actiontext-6.0.3.6/app/views"
+  * "/Users/zz/.rbenv/versions/2.7.1/lib/ruby/gems/2.7.0/gems/actionmailbox-6.0.3.6/app/views"
+):
+    46:     <% end %>
+    47: </div>
+    48: 
+    49: <%= render "@contacts" %>
+  
+app/views/projects/index.html.erb:49
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:29:40 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:30
+  Rendered projects/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 2625)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 519)
+Completed 200 OK in 26ms (Views: 22.6ms | ActiveRecord: 0.7ms | Allocations: 8593)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:31:10 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:30
+  Rendered projects/index.html.erb within layouts/application (Duration: 27.4ms | Allocations: 10642)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 519)
+Completed 200 OK in 39ms (Views: 29.4ms | ActiveRecord: 6.8ms | Allocations: 17310)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:31:43 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:30
+  Rendered projects/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 2663)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 517)
+Completed 200 OK in 29ms (Views: 25.8ms | ActiveRecord: 1.0ms | Allocations: 8563)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:33:01 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:30
+  Rendered projects/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2669)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 516)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.5ms | Allocations: 8603)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:33:05 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:30
+  Rendered projects/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2666)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 516)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.4ms | Allocations: 8585)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:33:17 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:30
+  Rendered projects/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2666)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 516)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.6ms | Allocations: 8577)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:33:19 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:30
+  Rendered projects/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2277)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 140)
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 0.7ms | Allocations: 6650)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:33:45 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/projects/index.html.erb:30
+  Rendered projects/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 2671)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 516)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.9ms | Allocations: 8609)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-04-06 23:33:53 -0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VKTK4basqRDVQtKb7j582jcjWtusQKD5Y/QD8RmzpiMZDBOLko9LAzjmjXIVXxzAe90gpG2F2iGf+90iyOCW5A=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms | Allocations: 2730)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:33:53 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:24
+  Rendered projects/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1453)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 548)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.3ms | Allocations: 7399)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:33:55 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:24
+  Rendered projects/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1059)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 171)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.8ms | Allocations: 5438)
+
+
+Started GET "/" for 127.0.0.1 at 2021-04-06 23:33:56 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.7ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:24
+  Rendered projects/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1058)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 171)
+Completed 200 OK in 13ms (Views: 10.9ms | ActiveRecord: 0.7ms | Allocations: 5426)
+
+
