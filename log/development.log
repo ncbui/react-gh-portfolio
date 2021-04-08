@@ -13327,3 +13327,256 @@ Processing by ProjectsController#show as HTML
 Completed 200 OK in 28ms (Views: 24.6ms | ActiveRecord: 0.2ms | Allocations: 11268)
 
 
+Started GET "/projects/1" for 127.0.0.1 at 2021-04-07 20:22:22 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:78:in `set_project'
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 77.0ms | Allocations: 8695)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 596)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 134)
+Completed 200 OK in 127ms (Views: 101.2ms | ActiveRecord: 3.8ms | Allocations: 24659)
+
+
+Started GET "/abouts" for 127.0.0.1 at 2021-04-07 20:22:27 -0700
+Processing by AboutsController#index as HTML
+  Rendering abouts/index.html.erb within layouts/application
+  [1m[36mAbout Load (1.0ms)[0m  [1m[34mSELECT "abouts".* FROM "abouts"[0m
+  ↳ app/views/abouts/index.html.erb:37
+  Rendered abouts/index.html.erb within layouts/application (Duration: 23.2ms | Allocations: 5102)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 193)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+Completed 200 OK in 43ms (Views: 30.6ms | ActiveRecord: 8.3ms | Allocations: 13839)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-07 20:22:29 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (1.1ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:62
+  Rendered projects/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1596)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 179)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 41)
+Completed 200 OK in 35ms (Views: 23.9ms | ActiveRecord: 1.1ms | Allocations: 10403)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2021-04-07 20:22:32 -0700
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (6.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:78:in `set_project'
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 732)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 177)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+Completed 200 OK in 47ms (Views: 35.9ms | ActiveRecord: 7.9ms | Allocations: 9027)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2021-04-07 20:23:27 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:78:in `set_project'
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 34.4ms | Allocations: 8695)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 596)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 134)
+Completed 200 OK in 78ms (Views: 55.5ms | ActiveRecord: 6.0ms | Allocations: 24669)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2021-04-07 20:23:29 -0700
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:78:in `set_project'
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 737)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 179)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 41)
+Completed 200 OK in 25ms (Views: 20.6ms | ActiveRecord: 0.7ms | Allocations: 9131)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2021-04-07 20:23:38 -0700
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:78:in `set_project'
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1095)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 566)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 132)
+Completed 200 OK in 34ms (Views: 30.7ms | ActiveRecord: 0.5ms | Allocations: 11211)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2021-04-07 20:24:25 -0700
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:78:in `set_project'
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1098)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 561)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 132)
+Completed 200 OK in 24ms (Views: 20.5ms | ActiveRecord: 0.3ms | Allocations: 11196)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2021-04-07 20:24:43 -0700
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:78:in `set_project'
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1103)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 561)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 132)
+Completed 200 OK in 27ms (Views: 22.0ms | ActiveRecord: 0.4ms | Allocations: 11290)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2021-04-07 20:25:27 -0700
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:78:in `set_project'
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1095)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 564)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 132)
+Completed 200 OK in 26ms (Views: 23.1ms | ActiveRecord: 0.3ms | Allocations: 11202)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-07 20:25:30 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:62
+  Rendered projects/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1597)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 179)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+Completed 200 OK in 40ms (Views: 20.9ms | ActiveRecord: 0.3ms | Allocations: 12411)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-07 20:25:35 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (5.0ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:62
+  Rendered projects/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 1003)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 177)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 41)
+Completed 200 OK in 30ms (Views: 24.1ms | ActiveRecord: 5.0ms | Allocations: 8854)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-07 20:25:44 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:62
+  Rendered projects/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1510)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 564)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 133)
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 0.3ms | Allocations: 11188)
+
+
+Started GET "/projects/2" for 127.0.0.1 at 2021-04-07 20:25:46 -0700
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:78:in `set_project'
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1098)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 179)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+Completed 200 OK in 30ms (Views: 23.8ms | ActiveRecord: 0.8ms | Allocations: 9580)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-07 20:25:50 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (1.9ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:62
+  Rendered projects/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 996)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 177)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 1.9ms | Allocations: 8857)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-07 20:25:57 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (0.3ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:62
+  Rendered projects/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1520)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 561)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 132)
+Completed 200 OK in 23ms (Views: 20.6ms | ActiveRecord: 0.3ms | Allocations: 11202)
+
+
+Started GET "/projects/2" for 127.0.0.1 at 2021-04-07 20:25:58 -0700
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:78:in `set_project'
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1101)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 179)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+Completed 200 OK in 26ms (Views: 18.3ms | ActiveRecord: 0.8ms | Allocations: 9607)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-07 20:26:03 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (4.2ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:62
+  Rendered projects/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 996)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 177)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 41)
+Completed 200 OK in 31ms (Views: 26.3ms | ActiveRecord: 4.2ms | Allocations: 8924)
+
+
+Started GET "/projects/1" for 127.0.0.1 at 2021-04-07 20:26:04 -0700
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProject Load (0.8ms)[0m  [1m[34mSELECT "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:78:in `set_project'
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 734)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 177)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 41)
+Completed 200 OK in 27ms (Views: 23.8ms | ActiveRecord: 0.8ms | Allocations: 9073)
+
+
+Started GET "/projects" for 127.0.0.1 at 2021-04-07 20:26:10 -0700
+Processing by ProjectsController#index as HTML
+  Rendering projects/index.html.erb within layouts/application
+  [1m[36mProject Load (1.5ms)[0m  [1m[34mSELECT "projects".* FROM "projects"[0m
+  ↳ app/views/projects/index.html.erb:62
+  Rendered projects/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 994)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 177)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 1.5ms | Allocations: 8827)
+
+
