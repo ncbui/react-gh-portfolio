@@ -24,7 +24,9 @@ body {
     background-color: $dark;
     margin: 0;
     padding: 0;
-    overflow-y: hidden;
     font-size: 24px;
 }
 
+.navbar {
+    background: transparent !important;
+}
