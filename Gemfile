@@ -58,7 +58,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Devise gem
 gem 'devise'
 
-# Easily stylize views with bootstrap
-gem 'bootstrap', '~> 5.0.0.beta2'
 # Add dynamic elements with jQuery
 gem 'jquery-rails'

@@ -12,3 +12,16 @@
  */
 
  @import "bootstrap";
+$light1: rgb(252, 247, 255);
+$light2: rgb(196, 202, 208);
+$med: rgb(135, 140, 143);
+$colorful: rgb(164, 150, 155);
+$dark: rgb(101, 85, 96);
+
+body {
+    background-color: $dark;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+
